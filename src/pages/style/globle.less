@@ -1,0 +1,113 @@
+.div {
+  padding: 0;
+  margin: 0;
+
+  .webkit_scrollbar {
+    /*滚动条整体样式*/
+    width: 14px;
+  }
+  .webkit_scrollbar_thumb {
+    /*滚动条里面小方块*/
+    border-radius: 7px;
+    background-color: rgb(69, 69, 88);
+    :hover {
+      background-color: rgb(127, 127, 136);
+    }
+  }
+  
+  .webkit_scrollbar_track {
+    /*滚动条里面轨道*/
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-y: overlay;
+  width: 100% !important;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: 0px;
+  border-radius: 0;
+}
+
+div,
+input {
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none !important;
+}
+
+html {
+  background-color: #0b0a06;
+}
+
+.common_hover {
+  transition: all 0.2s !important;
+}
+.common_hover:hover {
+  /* background-color: rgb(180, 180, 0); */
+  background-color: rgb(97, 147, 187) !important;
+  /* color: rgb(88, 88, 88); */
+}
+
+/* 主色 */
+.theme_color {
+  background-color: rgba(35, 35, 44, 1);
+}
+/* 副色1 */
+.theme_color_1 {
+  background-color: rgb(19, 19, 26);
+}
+/* 副色2 */
+.theme_color_2 {
+  background-color: rgb(69, 69, 88) !important;
+}
+/* 按钮色 */
+.theme_color_btn {
+  background-color: rgb(97, 147, 187);
+}
+/* 字体亮色 */
+.theme_color_font {
+  color: rgb(97, 147, 187);
+}
+
+/* ————————————————————字体—————————————————————— */
+@font-face {
+  font-family: 'FiraCode';
+  src: url(./FiraCode-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'yu100';
+  src: url(./yu100.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'yu400';
+  src: url(./yu400.ttf);
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,52 @@
+// @import '../../style/globle.less';
+
+footer {
+  height          : 120px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-evenly;
+  align-items     : center;
+  color           : #fff;
+  font-size       : 16px;
+}
+
+.icp {
+  color     : #fff;
+  transition: all 0.2s;
+}
+
+.icp:hover {
+  /* 字体颜色 */
+  color: rgb(97, 147, 187);
+}
+
+.site_frame {
+  padding      : 2px 8px;
+  margin-right : 10px;
+  border-radius: 6px;
+  user-select  : none;
+  transition   : all 0.2s !important;
+  background-color: rgba(35, 35, 44, 1);
+  // .theme_color();
+}
+
+
+.site_frame:hover {
+
+    /* background-color: rgb(180, 180, 0); */
+    background-color: rgb(97, 147, 187) !important;
+    /* color        : rgb(88, 88, 88); */
+}
+
+
+
+.site-frame:last-child {
+  margin-right: 0;
+}
+
+@media all and (max-width: 1240px) {
+  footer {
+    font-size: 14px;
+  }
+}
